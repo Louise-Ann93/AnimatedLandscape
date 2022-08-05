@@ -4,11 +4,40 @@
   box-sizing: border-box;
 }
 
+body #sky {
+  height: 100vh;
+  width: 100vw;
+}
+
+.wave {
+  bottom: 0;
+  position: absolute;
+}
+
 .night {
   background-image: url("../sky-stars.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.night:active {
+  animation-name: nightToDay;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nightToDay {
+  0% {
+    background-color: black;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    background-color: deepskyblue;
+    opacity: 1;
+  }
 }
 
 .day {
@@ -16,6 +45,75 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.day:active {
+  animation-name: dayToNight;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dayToNight {
+  0% {
+    background-color: deepskyblue;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    background-color: black;
+    opacity: 1;
+  }
+}
+
+.sundown:active {
+  animation-name: sundown;
+  animation: 10s rise ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sundown {
+  0% {
+    background-color: #ffdd00;
+    border: 10px solid #f1c40f;
+    top: 10%;
+    opacity: 1;
+  }
+  50% {
+    top: 50%;
+    opacity: 0.5;
+  }
+  100% {
+    background-color: #bdc3c7;
+    border: 10px solid #eaeff2;
+    top: 10%;
+    opacity: 1;
+  }
+}
+
+.sunrise:active {
+  animation-name: sunrise;
+  animation-fill-mode: forwards;
+  animation: 10s rise ease-out;
+}
+
+@keyframes sunrise {
+  0% {
+    background-color: #bdc3c7;
+    border: 10px solid #eaeff2;
+    opacity: 0;
+    top: 50%;
+  }
+  50% {
+    opacity: 1;
+    top: 10%;
+  }
+  100% {
+    background-color: #ffdd00;
+    border: 10px solid #f1c40f;
+    opacity: 0;
+    top: 50%;
+  }
 }
 
 #orb {
@@ -28,11 +126,6 @@
   left: 15%;
   bottom: 0;
   right: 0;
-}
-
-#sky {
-  height: 100vh;
-  width: 100vw;
 }
 
 .sun {
@@ -146,5 +239,122 @@
   }
   to {
     left: 100%;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.star-1 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+}
+
+.star-2 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+}
+
+.star-3 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+}
+
+.star-4 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+}
+
+.star-5 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+}
+
+.star-6 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+}
+
+.star-7 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+}
+
+
+@keyframes twinkle-1 {
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-2 {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-3 {
+  70% {
+    transform: scale(0.5);
+    opacity: 0.5;
   }
 }
