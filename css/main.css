@@ -89,31 +89,62 @@
 }
 
 @keyframes cloud1 {
-  from {left: -100px;}
-  to {left: 100%;}
+  from {
+    left: -25%;
+  }
+  to {
+    left: 100%;
+  }
 }
 
 .cloud2 {
   position: absolute;
   top: 25%;
+  left: -25%;
   animation: cloud2 15s ease-in;
   animation-iteration-count: infinite;
-
+  animation-delay: 2s;
 }
 
 @keyframes cloud2 {
-  from {left: -100px;}
-  to {left: 100%;}
+  from {
+    left: -25%;
+  }
+  to {
+    left: 100%;
+  }
 }
 
 .cloud3 {
   position: absolute;
   top: 50%;
-  animation: cloud3 20s ease-out;
+  animation: cloud3 20s linear;
   animation-iteration-count: infinite;
 }
 
 @keyframes cloud3 {
-  from {left: -100px;}
-  to {left: 100%;}
+  from {
+    left: -25%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.cloud4 {
+  position: absolute;
+  top: 30%;
+  left: -75%;
+  animation: cloud3 15s ease-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes cloud4 {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 100%;
+  }
 }
