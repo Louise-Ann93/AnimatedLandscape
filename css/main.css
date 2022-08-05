@@ -78,21 +78,46 @@
 }
 
 .visible {
-  background-color: #eaeff2;
+  background-color: white;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .cloud1 {
   position: absolute;
   top: 5%;
+  animation: cloud1 20s infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud1 {
+  from {left: -100px;}
+  to {left: 100%;}
 }
 
 .cloud2 {
   position: absolute;
   top: 25%;
-  left: 35%;
+  animation: cloud2 15s ease-in;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes cloud2 {
+  from {left: -100px;}
+  to {left: 100%;}
 }
 
 .cloud3 {
   position: absolute;
   top: 50%;
+  animation: cloud3 20s ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud3 {
+  from {left: -100px;}
+  to {left: 100%;}
 }

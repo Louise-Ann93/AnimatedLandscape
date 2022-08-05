@@ -10,6 +10,21 @@ $(document).ready(function () {
     } else {
       $('#sky').removeClass('night').addClass('day');
     }
+    if ($('#cloud1').hasClass('invisible')) {
+      $('#cloud1').removeClass('invisible');
+    } else {
+      $('#cloud1').addClass('invisible');
+    }
+    if ($('#cloud2').hasClass('invisible')) {
+      $('#cloud2').removeClass('invisible');
+    } else {
+      $('#cloud2').addClass('invisible');
+    }
+    if ($('#cloud3').hasClass('invisible')) {
+      $('#cloud3').removeClass('invisible');
+    } else {
+      $('#cloud3').addClass('invisible');
+    }
     if ($('#moon-spot1').hasClass('visible')) {
       $('#moon-spot1').removeClass('visible');
     } else {
