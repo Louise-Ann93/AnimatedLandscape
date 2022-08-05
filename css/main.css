@@ -81,10 +81,6 @@
   background-color: white;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .cloud1 {
   position: absolute;
   top: 5%;
