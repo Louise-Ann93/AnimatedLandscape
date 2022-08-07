@@ -5,7 +5,8 @@
 
 @keyframes nightToDay {
   0% {
-    background-image: url("../sky-stars.jpeg");  }
+    background-image: url("../sky-stars.jpeg");
+  }
   100% {
     background-image: url("../sky-clouds.png");
   }
@@ -21,7 +22,8 @@
     background-image: url("../sky-clouds.png");
   }
   100% {
-    background-image: url("../sky-stars.jpeg");  }
+    background-image: url("../sky-stars.jpeg");
+  }
 }
 
 .sundown {
@@ -38,8 +40,7 @@
     top: 10%;
     left: 15%;
   }
-  50%
-  {
+  50% {
     top: 100%;
     left: 50%;
     opacity: 0.7;
@@ -83,11 +84,36 @@
   }
 }
 
+.alien-ship {
+  position: absolute;
+  top: 15%;
+  left: -25%;
+  animation: alien 15s linear forwards;
+  animation-delay: 10s;
+}
+
+@keyframes alien {
+  0% {
+    left: -25%;
+  }
+  40% {
+    left: 19%;
+    transform: rotate(25deg);
+  }
+  75% {
+    left: 19%;
+    transform: rotate(-25deg);
+  }
+  100% {
+    left: 115%
+  }
+
+}
+
 .cloud1 {
   position: absolute;
   top: 5%;
-  animation: cloud1 20s infinite;
-  animation-iteration-count: infinite;
+  animation: cloud1 20s linear infinite;
   transition: transform 3s;
 }
 
@@ -108,8 +134,7 @@
   position: absolute;
   top: 25%;
   left: -25%;
-  animation: cloud2 15s ease-in;
-  animation-iteration-count: infinite;
+  animation: cloud2 15s ease-in infinite;
   animation-delay: 2s;
 }
 
@@ -123,14 +148,13 @@
 }
 
 .cloud2:hover {
-  transform: rotate(45deg);
+  transform: rotate(180deg);
 }
 
 .cloud3 {
   position: absolute;
   top: 50%;
-  animation: cloud3 20s linear;
-  animation-iteration-count: infinite;
+  animation: cloud3 20s linear infinite;
 }
 
 @keyframes cloud3 {
@@ -142,16 +166,11 @@
   }
 }
 
-.cloud3:hover {
-  transform: scale(1.5);
-}
-
 .cloud4 {
   position: absolute;
   top: 30%;
   left: -75%;
-  animation: cloud3 15s ease-out;
-  animation-iteration-count: infinite;
+  animation: cloud3 15s ease-out infinite;
   animation-delay: 2s;
 }
 
@@ -162,10 +181,6 @@
   to {
     left: 100%;
   }
-}
-
-.invisible {
-  visibility: hidden;
 }
 
 .star-1 {
@@ -411,7 +426,7 @@
     transform: scale(0.5);
     opacity: 0.5;
   }
-  100%{
+  100% {
     opacity: 0;
     visibility: hidden;
   }

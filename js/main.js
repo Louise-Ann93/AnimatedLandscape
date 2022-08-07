@@ -90,23 +90,6 @@ $(document).ready(function () {
       $('#stars-7').removeClass('star-day-7');
     }
 
-
-
-  //   if ($('#moon-spot1').hasClass('visible')) {
-  //     $('#moon-spot1').removeClass('visible');
-  //   } else {
-  //     $('#moon-spot1').addClass('visible');
-  //   }
-  //   if ($('#moon-spot2').hasClass('visible')) {
-  //     $('#moon-spot2').removeClass('visible');
-  //   } else {
-  //     $('#moon-spot2').addClass('visible');
-  //   }
-  //   if ($('#moon-spot3').hasClass('visible')) {
-  //     $('#moon-spot3').removeClass('visible');
-  //   } else {
-  //     $('#moon-spot3').addClass('visible');
-  //   }
   })
 })
 

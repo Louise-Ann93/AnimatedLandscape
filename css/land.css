@@ -18,11 +18,61 @@ body #sky {
 .cow1 {
   position: absolute;
   bottom: 10%;
-  right: 10%;
+  animation: cow1 35s ease-in;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes cow1 {
+  0% {
+    right: -25%;
+  }
+  40% {
+    right: 50%;
+  }
+  60% {
+    right: 50%;
+  }
+  100% {
+    right: 115%
+  }
+}
+
+.cow:hover {
+  transform: scale(1.1);
+  bottom: 12%
 }
 
 .cow2 {
   position: absolute;
-  bottom: 0;
-  right: 20%;
+  bottom: 10%;
+  animation: cow2 20s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cow2 {
+  0% {
+    right: -25%;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    right:65%;
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.3;
+  }
+  100% {
+    right: 65%;
+    opacity: 0;
+  }
 }
