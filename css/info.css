@@ -1,0 +1,21 @@
+.info {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: baseline;
+  padding: 5px;
+  border-color: darkblue;
+  border-style: solid;
+  box-shadow: 5px 5px 20px 8px #888888;
+  width: 35%;
+  top: 5%;
+  right: 5%;
+}
+
+p {
+  text-align: justify;
+}

@@ -34,12 +34,10 @@ body #sky {
     right: 50%;
   }
   70% {
-    transform: scale(1.1);
     bottom: 12%;
     right: 50%;
   }
   71% {
-    transform: scale(1);
     bottom: 10%;
   }
   100% {
