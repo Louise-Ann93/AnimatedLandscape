@@ -1,6 +1,5 @@
 .nightToDay {
   animation: nightToDay 8s linear;
-  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -15,7 +14,6 @@
 
 .dayToNight {
   animation: dayToNight 10s linear;
-  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -30,7 +28,6 @@
 
 .sundown {
   animation: sundown 10s linear;
-  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -60,7 +57,6 @@
 
 .sunrise {
   animation: sunrise 10s linear;
-  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -159,6 +155,10 @@
   position: absolute;
   top: 50%;
   animation: cloud3 20s linear infinite;
+}
+
+.cloud3:hover {
+  transform: scale(1.5);
 }
 
 @keyframes cloud3 {
