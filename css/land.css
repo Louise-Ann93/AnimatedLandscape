@@ -18,7 +18,7 @@ body #sky {
 .cow1 {
   position: absolute;
   bottom: 10%;
-  animation: cow1 35s ease-in;
+  animation: cow1 30s ease-out;
   animation-fill-mode: forwards;
 
 }
@@ -33,6 +33,15 @@ body #sky {
   60% {
     right: 50%;
   }
+  70% {
+    transform: scale(1.1);
+    bottom: 12%;
+    right: 50%;
+  }
+  71% {
+    transform: scale(1);
+    bottom: 10%;
+  }
   100% {
     right: 115%
   }
@@ -46,7 +55,7 @@ body #sky {
 .cow2 {
   position: absolute;
   bottom: 10%;
-  animation: cow2 20s ease-in;
+  animation: cow2 21s ease-in;
   animation-fill-mode: forwards;
 }
 

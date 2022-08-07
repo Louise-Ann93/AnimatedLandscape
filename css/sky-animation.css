@@ -88,8 +88,8 @@
   position: absolute;
   top: 15%;
   left: -25%;
-  animation: alien 15s linear forwards;
-  animation-delay: 10s;
+  animation: alien 14s linear forwards;
+  animation-delay: 11s;
 }
 
 @keyframes alien {
@@ -97,11 +97,11 @@
     left: -25%;
   }
   40% {
-    left: 19%;
+    left: 17%;
     transform: rotate(25deg);
   }
   75% {
-    left: 19%;
+    left: 17%;
     transform: rotate(-25deg);
   }
   100% {
