@@ -1,5 +1,6 @@
 .nightToDay {
   animation: nightToDay 8s linear;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -14,6 +15,7 @@
 
 .dayToNight {
   animation: dayToNight 10s linear;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -28,6 +30,7 @@
 
 .sundown {
   animation: sundown 10s linear;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -57,6 +60,7 @@
 
 .sunrise {
   animation: sunrise 10s linear;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
