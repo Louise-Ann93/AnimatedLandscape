@@ -1,84 +1,112 @@
 $(document).ready(function () {
   $('#orb').click(function () {
 
-    if ($(this).hasClass('sun')) {
-      $(this).removeClass('sun').addClass('moon');
-    } else {
+    if ($(this).hasClass('moon')) {
       $(this).removeClass('moon').addClass('sun');
+    } else {
+      $(this).removeClass('sun').addClass('moon');
+    }
+
+    if ($(this).hasClass('sun')) {
+      $(this).addClass('sundown')
+      $(this).removeClass('sunrise');
+    } else {
+      $(this).addClass('sunrise')
+      $(this).removeClass('sundown');
     }
 
     if ($('#sky').hasClass('day')) {
-      $('#sky').removeClass('day').addClass('night');
+      $('#sky').removeClass('day')
+      $('#sky').addClass('night');
     } else {
-      $('#sky').removeClass('night').addClass('day');
+      $('#sky').removeClass('night')
+      $('#sky').addClass('day');
     }
 
     if ($('#sky').hasClass('day')) {
-      $('#nightWave').addClass('invisible');
-      $('#dayWave').removeClass('invisible');
+      $('#sky').addClass('dayToNight')
+      $('#sky').removeClass('nightToDay');
     } else {
-      $('#dayWave').addClass('invisible');
-      $('#nightWave').removeClass('invisible');
+      $('#sky').addClass('nightToDay')
+      $('#sky').removeClass('dayToNight');
     }
 
-    if ($('#stars').hasClass('invisible')) {
-      $('#stars').removeClass('invisible');
+    if ($('#sky').hasClass('night')) {
+      $('#stars').removeClass('star-1');
+      $('#stars').addClass('star-day-1');
     } else {
-      $('#stars').addClass('invisible');
+      $('#stars').addClass('star-1');
+      $('#stars').removeClass('star-day-1');
     }
 
-    if ($('#stars-2').hasClass('invisible')) {
-      $('#stars-2').removeClass('invisible');
+    if ($('#sky').hasClass('night')) {
+      $('#stars-2').removeClass('star-2');
+      $('#stars-2').addClass('star-day-2');
     } else {
-      $('#stars-2').addClass('invisible');
+      $('#stars-2').addClass('star-2');
+      $('#stars-2').removeClass('star-day-2');
     }
 
-    if ($('#stars-3').hasClass('invisible')) {
-      $('#stars-3').removeClass('invisible');
+    if ($('#sky').hasClass('night')) {
+      $('#stars-3').removeClass('star-3');
+      $('#stars-3').addClass('star-day-3');
     } else {
-      $('#stars-3').addClass('invisible');
-    }
-
-    if ($('#stars-4').hasClass('invisible')) {
-      $('#stars-4').removeClass('invisible');
-    } else {
-      $('#stars-4').addClass('invisible');
-    }
-
-    if ($('#stars-5').hasClass('invisible')) {
-      $('#stars-5').removeClass('invisible');
-    } else {
-      $('#stars-5').addClass('invisible');
-    }
-
-    if ($('#stars-6').hasClass('invisible')) {
-      $('#stars-6').removeClass('invisible');
-    } else {
-      $('#stars-6').addClass('invisible');
-    }
-
-    if ($('#stars-7').hasClass('invisible')) {
-      $('#stars-7').removeClass('invisible');
-    } else {
-      $('#stars-7').addClass('invisible');
+      $('#stars-3').addClass('star-3');
+      $('#stars-3').removeClass('star-day-3');
     }
 
 
-    if ($('#moon-spot1').hasClass('visible')) {
-      $('#moon-spot1').removeClass('visible');
+    if ($('#sky').hasClass('night')) {
+      $('#stars-4').removeClass('star-4');
+      $('#stars-4').addClass('star-day-4');
     } else {
-      $('#moon-spot1').addClass('visible');
+      $('#stars-4').addClass('star-3');
+      $('#stars-4').removeClass('star-day-4');
     }
-    if ($('#moon-spot2').hasClass('visible')) {
-      $('#moon-spot2').removeClass('visible');
+
+
+    if ($('#sky').hasClass('night')) {
+      $('#stars-5').removeClass('star-5');
+      $('#stars-5').addClass('star-day-5');
     } else {
-      $('#moon-spot2').addClass('visible');
+      $('#stars-5').addClass('star-5');
+      $('#stars-5').removeClass('star-day-5');
     }
-    if ($('#moon-spot3').hasClass('visible')) {
-      $('#moon-spot3').removeClass('visible');
+
+
+    if ($('#sky').hasClass('night')) {
+      $('#stars-6').removeClass('star-6');
+      $('#stars-6').addClass('star-day-6');
     } else {
-      $('#moon-spot3').addClass('visible');
+      $('#stars-6').addClass('star-6');
+      $('#stars-6').removeClass('star-day-6');
     }
+
+    if ($('#sky').hasClass('night')) {
+      $('#stars-7').removeClass('star-7');
+      $('#stars-7').addClass('star-day-7');
+    } else {
+      $('#stars-7').addClass('star-7');
+      $('#stars-7').removeClass('star-day-7');
+    }
+
+
+
+  //   if ($('#moon-spot1').hasClass('visible')) {
+  //     $('#moon-spot1').removeClass('visible');
+  //   } else {
+  //     $('#moon-spot1').addClass('visible');
+  //   }
+  //   if ($('#moon-spot2').hasClass('visible')) {
+  //     $('#moon-spot2').removeClass('visible');
+  //   } else {
+  //     $('#moon-spot2').addClass('visible');
+  //   }
+  //   if ($('#moon-spot3').hasClass('visible')) {
+  //     $('#moon-spot3').removeClass('visible');
+  //   } else {
+  //     $('#moon-spot3').addClass('visible');
+  //   }
   })
 })
 

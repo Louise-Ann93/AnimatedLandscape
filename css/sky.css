@@ -1,0 +1,76 @@
+.night {
+  background-image: url("../sky-stars.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.day {
+  background-image: url("../sky-clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#orb {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  padding: 20px;
+  position: absolute;
+}
+
+.sun {
+  background-color: #ffdd00;
+  border: 10px solid #f1c40f;
+  top: 10%;
+  left: 15%;
+}
+
+.sun:hover {
+  border: 20px solid #f1c40f;
+}
+
+.moon {
+  background-color: #bdc3c7;
+  border: 10px solid #eaeff2;
+  top: 10%;
+  left: 15%;
+}
+
+.moon:hover {
+  border: 20px solid white;
+}
+
+#moon-spot1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  float: right;
+  margin: 20px;
+}
+
+#moon-spot2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  float: right;
+  margin: 20px;
+}
+
+#moon-spot3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  float: right;
+  margin: 20px;
+}
+
+.visible {
+  background-color: white;
+}
+
+svg {
+  overflow: visible;
+}
+

@@ -1,0 +1,440 @@
+.nightToDay {
+  animation: nightToDay 8s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nightToDay {
+  0% {
+    background-image: url("../sky-stars.jpeg");  }
+  100% {
+    background-image: url("../sky-clouds.png");
+  }
+}
+
+.dayToNight {
+  animation: dayToNight 10s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dayToNight {
+  0% {
+    background-image: url("../sky-clouds.png");
+  }
+  100% {
+    background-image: url("../sky-stars.jpeg");  }
+}
+
+.sundown {
+  animation: sundown 10s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sundown {
+  0% {
+    box-shadow: 0 0 20px 8px #ffdd00;
+    background-color: #ffdd00;
+    border: 10px solid #f1c40f;
+    opacity: 1;
+    top: 10%;
+    left: 15%;
+  }
+  50%
+  {
+    top: 100%;
+    left: 50%;
+    opacity: 0.7;
+  }
+  100% {
+    top: 10%;
+    left: 15%;
+    background-color: #bdc3c7;
+    border: 10px solid #eaeff2;
+    box-shadow: 0 0 20px 8px #eaeff2;
+    opacity: 1;
+  }
+}
+
+.sunrise {
+  animation: sunrise 10s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sunrise {
+  0% {
+    top: 10%;
+    left: 15%;
+    background-color: #bdc3c7;
+    border: 10px solid #eaeff2;
+    opacity: 1;
+    box-shadow: 0 0 20px 8px #eaeff2
+  }
+  50% {
+    top: 100%;
+    left: 50%;
+    opacity: 0.7;
+  }
+  100% {
+    top: 10%;
+    left: 15%;
+    background-color: #ffdd00;
+    border: 10px solid #f1c40f;
+    opacity: 1;
+    box-shadow: 0 0 20px 8px #ffdd00;
+  }
+}
+
+.cloud1 {
+  position: absolute;
+  top: 5%;
+  animation: cloud1 20s infinite;
+  animation-iteration-count: infinite;
+  transition: transform 3s;
+}
+
+.cloud1:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes cloud1 {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.cloud2 {
+  position: absolute;
+  top: 25%;
+  left: -25%;
+  animation: cloud2 15s ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes cloud2 {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.cloud2:hover {
+  transform: rotate(45deg);
+}
+
+.cloud3 {
+  position: absolute;
+  top: 50%;
+  animation: cloud3 20s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud3 {
+  from {
+    left: -25%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.cloud3:hover {
+  transform: scale(1.5);
+}
+
+.cloud4 {
+  position: absolute;
+  top: 30%;
+  left: -75%;
+  animation: cloud3 15s ease-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes cloud4 {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.star-1 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+.star-2 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  opacity: 0;
+}
+
+.star-3 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+  animation-delay: 9s;
+  opacity: 0;
+}
+
+.star-4 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-3;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  opacity: 0;
+}
+
+.star-5 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-2;
+  animation-duration: 1s;
+  animation-delay: 7s;
+  opacity: 0;
+}
+
+.star-6 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+.star-7 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-name: twinkle-1;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  opacity: 0;
+}
+
+
+@keyframes twinkle-1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes twinkle-3 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+.star-day-1 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  animation-iteration-count: 3;
+  animation-name: twinkle-day-1;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.star-day-2 {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  border-radius: 50%;
+  animation-iteration-count: 3;
+  animation-name: twinkle-day-3;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.star-day-3 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border-radius: 50%;
+  animation-iteration-count: 2;
+  animation-name: twinkle-day-2;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.star-day-4 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  border-radius: 50%;
+  animation-iteration-count: 2;
+  animation-name: twinkle-day-3;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+.star-day-5 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  border-radius: 50%;
+  animation-iteration-count: 3;
+  animation-name: twinkle-day-2;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.star-day-6 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  border-radius: 50%;
+  animation-iteration-count: 2;
+  animation-name: twinkle-day-1;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.star-day-7 {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  border-radius: 50%;
+  animation-iteration-count: 3;
+  animation-name: twinkle-day-1;
+  opacity: 0;
+}
+
+@keyframes twinkle-day-1 {
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes twinkle-day-2 {
+  20% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes twinkle-day-3 {
+  70% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

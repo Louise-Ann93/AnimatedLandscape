@@ -6,7 +6,9 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sky.css">
+  <link rel="stylesheet" href="css/sky-animation.css">
+  <link rel="stylesheet" href="css/land.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
@@ -14,26 +16,14 @@
 <body>
 
 <div id="sky" class="day dayToNight">
-  <div id="cloud1" class="cloud1">
-    <img src="cloud.svg" alt="Cloud" width="200">
-  </div>
-  <div id="cloud2" class="cloud2">
-    <img src="cloud.svg" alt="Cloud" width="300">
-  </div>
-  <div id="cloud3" class="cloud3">
-    <img src="cloud.svg" alt="Cloud" width="200">
-  </div>
-  <div id="cloud4" class="cloud4">
-    <img src="cloud.svg" alt="Cloud" width="300">
-  </div>
 
-  <div id="stars" class="star-1 invisible"></div>
-  <div id="stars-2" class="star-2 invisible"></div>
-  <div id="stars-3" class="star-3 invisible"></div>
-  <div id="stars-4" class="star-4 invisible"></div>
-  <div id="stars-5" class="star-5 invisible"></div>
-  <div id="stars-6" class="star-6 invisible"></div>
-  <div id="stars-7" class="star-7 invisible"></div>
+  <div id="stars" class="star-1"></div>
+  <div id="stars-2" class="star-2"></div>
+  <div id="stars-3" class="star-3"></div>
+  <div id="stars-4" class="star-4"></div>
+  <div id="stars-5" class="star-5"></div>
+  <div id="stars-6" class="star-6"></div>
+  <div id="stars-7" class="star-7"></div>
 
   <div id="orb" class="sun sundown">
     <div id="moon-spot1"></div>
@@ -41,15 +31,16 @@
     <div id="moon-spot3"></div>
   </div>
 
-  <svg id="dayWave" class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#00cba9" fill-opacity="1"
-          d="M0,128L34.3,122.7C68.6,117,137,107,206,133.3C274.3,160,343,224,411,224C480,224,549,160,617,165.3C685.7,171,754,245,823,234.7C891.4,224,960,128,1029,90.7C1097.1,53,1166,75,1234,96C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-  </svg>
+  <img id="cloud1" class="cloud1" src="cloud.svg" alt="Cloud" width="200">
+  <img id="cloud2" class="cloud2" src="cloud.svg" alt="Cloud" width="300">
+  <img id="cloud3" class="cloud3" src="cloud.svg" alt="Cloud" width="200">
+  <img id="cloud4" class="cloud4" src="cloud.svg" alt="Cloud" width="300">
 
-  <svg id="nightWave" class="wave invisible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#024b30" fill-opacity="1"
-          d="M0,128L34.3,122.7C68.6,117,137,107,206,133.3C274.3,160,343,224,411,224C480,224,549,160,617,165.3C685.7,171,754,245,823,234.7C891.4,224,960,128,1029,90.7C1097.1,53,1166,75,1234,96C1302.9,117,1371,139,1406,149.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-  </svg>
+  <img id="waveNight" class="wave waveDay" src="wave-night.svg" alt="waveNight">
+
+  <img class="cow1" id="cow1" src="happy-cow.svg" alt="cow" width="200">
+  <img class="cow2" id="cow2" src="happy-cow.svg" alt="cow" width="200">
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
