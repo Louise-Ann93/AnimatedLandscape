@@ -89,7 +89,19 @@ $(document).ready(function () {
       $('#stars-7').addClass('star-7');
       $('#stars-7').removeClass('star-day-7');
     }
-
   })
+
+  $('#show').click(function () {
+    $('.hide').removeClass('invisible')
+    $('.show').addClass('invisible')
+    $('#text').removeClass('invisible')
+  })
+
+  $('#hide').click(function () {
+    $('.show').removeClass('invisible')
+    $('.hide').addClass('invisible')
+    $('#text').addClass('invisible')
+  })
+
 })
 

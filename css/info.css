@@ -15,7 +15,33 @@
   top: 2%;
   right: 2%;
 }
+ul {
+  list-style-position: inside;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-p {
-  text-align: justify;
+.text {
+  font-size: 18px;
+}
+
+.invisible {
+  display: none !important;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.show {
+  color: darkblue;
+  padding: 25px;
+}
+
+.hide {
+  color: darkblue;
+  padding: 25px;
 }
