@@ -14,4 +14,6 @@ The project is built in HTML, CSS and jQuery.
 
 ## Feedback
 
+## URL - https://animation-landscape-madebywillo.netlify.app/
+
 If you have any feedback, please reach out to me at madebywillo@gmail.com
