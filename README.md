@@ -12,9 +12,9 @@ The project is built in HTML, CSS and jQuery.
 
 - [@Louise-Ann93](https://github.com/Louise-Ann93/)
 
-## Feedback
-
 ## URL
  https://animation-landscape-madebywillo.netlify.app/
+ 
+## Feedback
 
 If you have any feedback, please reach out to me at madebywillo@gmail.com
